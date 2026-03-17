@@ -690,7 +690,193 @@ footer {
   to   { opacity: 1; transform: none; }
 }
 
-/* ── RESPONSIVE ── */
+/* ── PROJECT STATUS BADGE ── */
+.proj-status {
+  font-size: 9px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.proj-status.live {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: #10b981;
+}
+
+.proj-status.not-live {
+  background: rgba(239, 68, 68, 0.1);   /* light red bg */
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #ef4444;                       /* red text */
+} 
+.proj-status.wip {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  color: #f59e0b;
+}
+
+/* ── ACHIEVEMENTS ── */
+.achievements-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Highlight card */
+.ach-highlight {
+  background: var(--bg-surface);
+  padding: 32px 36px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  transition: background 0.2s;
+}
+.ach-highlight:hover { background: var(--bg-elevated); }
+.ach-highlight-icon {
+  font-size: 28px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.ach-highlight-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+  letter-spacing: -0.3px;
+}
+.ach-highlight-sub {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.ach-highlight-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  max-width: 560px;
+}
+
+/* Cert cards */
+.ach-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--border);
+}
+.ach-card {
+  background: var(--bg-surface);
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: background 0.2s;
+  position: relative;
+}
+.ach-card:hover { background: var(--bg-elevated); }
+.ach-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.ach-card-body { flex: 1; min-width: 0; }
+.ach-card-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ach-card-issuer {
+  font-size: 11px;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+.ach-card-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.ach-view {
+  flex-shrink: 0;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+.ach-view:hover { color: var(--accent); }
+
+/* Leadership strip */
+.ach-leadership {
+  background: var(--bg-surface);
+  padding: 24px 36px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  transition: background 0.2s;
+}
+.ach-leadership:hover { background: var(--bg-elevated); }
+.ach-leadership-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+.ach-leadership-items {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.leadership-tag {
+  font-size: 12px;
+  padding: 5px 14px;
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  color: var(--text-secondary);
+  border-radius: 4px;
+  font-weight: 400;
+}
+.ach-all-certs {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+  padding: 6px 14px;
+  border: 1px solid var(--accent-glow);
+  border-radius: 4px;
+  background: var(--accent-dim);
+  transition: all 0.2s;
+}
+.ach-all-certs:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .ach-cards { grid-template-columns: 1fr; }
+  .ach-highlight { flex-direction: column; gap: 14px; }
+  .ach-leadership { gap: 12px; }
+  .ach-all-certs { width: 100%; text-align: center; }
+}
 @media (max-width: 768px) {
   nav { padding: 0 20px; }
   .nav-links { display: none; }

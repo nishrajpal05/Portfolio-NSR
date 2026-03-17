@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nishmeet Singh Rajpal — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-logo">NSR<span>.</span></div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-icon moon">🌙</span>
+        <span class="toggle-icon sun">☀️</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          Open to opportunities
+        </div>
+        <h1 class="hero-name">
+          NISHMEET<br>
+          <span class="stroke">RAJPAL</span>
+        </h1>
+        <p class="hero-sub">
+          <strong>Computer Science & Electronics</strong> · KIIT University · 3rd Year
+        </p>
+        <p class="hero-bio">
+          I build at the intersection of AI and backend engineering — from IoT-driven data pipelines to full-stack ML platforms.
+          Currently focused on developing intelligent systems that are production-ready, not just proof-of-concept.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects →</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          <a href="https://drive.google.com/file/d/1OtkjYkbbVCLU5quxTiYG1aR6s28SpqyD/view?usp=drive_link" target="_blank" class="btn btn-ghost">Resume ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="container">
+      <p class="section-eyebrow reveal">About</p>
+      <h2 class="section-heading reveal">Nishmeet, in brief.</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a Pre-Final Year B.Tech student in Electronics and Computer Science at KIIT University,
+            maintaining a CGPA of 8.5. My work spans AI/ML, backend systems, and IoT — I care about
+            building things that are robust, scalable, and actually useful in the real world.
+          </p>
+          <p>
+            I've shipped full-stack platforms in financial analytics, AI research aggregation, and smart hardware. Beyond development,
+            I've taken on leadership roles early on as Head Boy, managing teams and organizing large-scale initiatives,
+            and later worked within the startup ecosystem at KIIT E-Cell, contributing to collaborations and outreach.
+            I continue to strengthen my problem-solving and system design skills to build scalable and impactful solutions.
+          </p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat">
+            <div class="stat-num">5<sup>+</sup></div>
+            <div class="stat-label">Projects built</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">15<sup>k+</sup></div>
+            <div class="stat-label">Platform users</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">100<sup>+</sup></div>
+            <div class="stat-label">DSA problems</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">8.5<sup>/10</sup></div>
+            <div class="stat-label">CGPA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-eyebrow reveal">Skills</p>
+      <h2 class="section-heading reveal">What I work with.</h2>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <div class="skill-group-title">Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">AI / ML</div>
+          <div class="skill-tags">
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Time-Series</span>
+            <span class="skill-tag">Computer Vision</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Backend & Systems</div>
+          <div class="skill-tags">
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">RESTful APIs</span>
+            <span class="skill-tag">Async APIs</span>
+            <span class="skill-tag">Data Pipelines</span>
+            <span class="skill-tag">React</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Tools & Infra</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Render</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-eyebrow reveal">Projects</p>
+      <h2 class="section-heading reveal">Things I've built.</h2>
+      <div class="projects-list reveal">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div>
+            <div class="project-meta">
+              <span class="project-index">001</span>
+              <span class="proj-status live">Live</span>
+            </div>
+            <div class="project-name">AutoResearch Digest</div>
+            <div class="project-desc">
+              A full-stack platform that aggregates and monitors daily AI publications so researchers
+              stay updated without manually crawling sources. Built with FastAPI, LLM-based summarization,
+              Google &amp; GitHub OAuth, and a PostgreSQL database for structured content delivery.
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">LLM</span>
+              <span class="tech-tag">OAuth</span>
+              <span class="tech-tag">Data Pipelines</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/nishrajpal05" target="_blank" class="proj-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="https://autoresearch-digest-beta-2.onrender.com/" target="_blank" class="proj-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+                 <div class="project-card">
+          <div>
+            <div class="project-meta">
+              <span class="project-index">002</span>
+              <span class="proj-status live">Live</span>
+            </div>
+            <div class="project-name">SentiPulse</div>
+            <div class="project-desc">
+              A YouTube comment sentiment analyzer that fetches comments from any video URL and classifies
+              them as positive, negative, or neutral using NLP — instantly. Features real-time sentiment
+              distribution charts and supports bulk analysis of up to 100 comments per query.
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">YouTube API</span>
+              <span class="tech-tag">Sentiment Analysis</span>
+              <span class="tech-tag">Python</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/nishrajpal05" target="_blank" class="proj-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="https://project-holmes-wdbq.onrender.com/" target="_blank" class="proj-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live ↗
+            </a>
+          </div>
+        </div>
+
+
+
+
+     
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div>
+            <div class="project-meta">
+              <span class="project-index">003</span>
+              <span class="proj-status wip">In Progress</span>
+            </div>
+            <div class="project-name">AI &amp; IoT Smart Water Bottle</div>
+            <div class="project-desc">
+              End-to-end IoT system using ESP32 sensors, MongoDB, and FastAPI for real-time hydration analytics.
+              Time-series regression and anomaly detection models achieve 85%+ prediction precision, with
+              an API-driven pipeline delivering personalized hydration recommendations in real time.
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Time-Series ML</span>
+              <span class="tech-tag">IoT</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/nishrajpal05" target="_blank" class="proj-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div>
+            <div class="project-meta">
+              <span class="project-index">004</span>
+              <span class="proj-status live">Live</span>
+            </div>
+            <div class="project-name">TheResourcePlatform</div>
+            <div class="project-desc">
+              Educational content platform built and scaled to 15,000+ monthly users through strategic
+              SEO optimization and analytics-driven experimentation using Google Analytics and A/B testing.
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">SEO</span>
+              <span class="tech-tag">Google Analytics</span>
+              <span class="tech-tag">A/B Testing</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/nishrajpal05" target="_blank" class="proj-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="https://theresourceplatform.blogspot.com/" target="_blank" class="proj-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live ↗
+            </a>
+          </div>
+        </div>
+  <!-- Project 5 -->
+         <div class="project-card">
+          <div>
+            <div class="project-meta">
+              <span class="project-index">005</span>
+              <span class="proj-status wip">Not Live</span>
+            </div>
+            <div class="project-name">Stock Price Prediction Platform</div>
+            <div class="project-desc">
+              Full-stack financial analytics tool using FastAPI and React to forecast Indian equity prices
+              from historical data. Features a linear regression time-series model with MinMax scaling,
+              dynamic REST API for stock queries, and an interactive Recharts dashboard with R² evaluation.
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">scikit-learn</span>
+              <span class="tech-tag">yfinance</span>
+              <span class="tech-tag">Recharts</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/nishrajpal05" target="_blank" class="proj-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="<STOCK_DEPLOY_URL>" target="_blank" class="proj-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+  <div class="divider"></div>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-eyebrow reveal">Experience</p>
+      <h2 class="section-heading reveal">Where I've contributed.</h2>
+      <div class="exp-list reveal">
+
+        <div class="exp-item">
+          <div class="exp-period">Dec 2023<br>→ Feb 2025</div>
+          <div>
+            <div class="exp-role">Administrative Team Member</div>
+            <div class="exp-company">IoT Lab · KIIT University</div>
+            <ul class="exp-points">
+              <li>Selected from 200+ applicants to support technical operations at the university IoT lab.</li>
+              <li>Assisted in evaluating programming candidates and coordinating lab-wide activities.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-period">May 2024<br>→ Jun 2024</div>
+          <div>
+            <div class="exp-role">Product Management Intern</div>
+            <div class="exp-company">Ostello</div>
+            <ul class="exp-points">
+              <li>Conducted user research, feature prioritization, and competitive analysis to improve onboarding workflows.</li>
+              <li>Collaborated with engineering teams within Agile development cycles.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-period">May 2024<br>→ May 2025</div>
+          <div>
+            <div class="exp-role">Public &amp; Corporate Relations Intern</div>
+            <div class="exp-company">KIIT E-Cell</div>
+            <ul class="exp-points">
+              <li>Coordinated partnerships connecting 50+ startups with industry stakeholders.</li>
+              <li>Supported fintech outreach initiatives and startup ecosystem-building efforts.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="divider"></div>
+
+  <!-- ── ACHIEVEMENTS ── -->
+  <section id="achievements">
+    <div class="container">
+      <p class="section-eyebrow reveal">Achievements</p>
+      <h2 class="section-heading reveal">Earned along the way.</h2>
+
+      <div class="achievements-grid reveal">
+
+        <!-- Top highlight -->
+        <div class="ach-highlight">
+          <div class="ach-highlight-icon">☁️</div>
+          <div class="ach-highlight-body">
+            <div class="ach-highlight-title">Google Cloud Study Jams</div>
+            <div class="ach-highlight-sub">Top 80 of 500+ participants · Google</div>
+            <div class="ach-highlight-desc">
+              Ranked in the top 16% out of 500+ participants nationwide, completing hands-on labs
+              across core GCP services including compute, storage, and ML APIs.
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert cards 2×2 -->
+        <div class="ach-cards">
+
+          <div class="ach-card">
+            <div class="ach-icon">🎓</div>
+            <div class="ach-card-body">
+              <div class="ach-card-title">Supervised Machine Learning</div>
+              <div class="ach-card-issuer">Stanford Online · Coursera</div>
+              <div class="ach-card-desc">Regression and Classification — Andrew Ng</div>
+            </div>
+            <a href="https://drive.google.com/file/d/1AkiZ4-g9xA-P61GfZHffjFXv2nbd4vYK/view?usp=sharing" target="_blank" class="ach-view">View ↗</a>
+          </div>
+
+          <div class="ach-card">
+            <div class="ach-icon">🏅</div>
+            <div class="ach-card-body">
+              <div class="ach-card-title">Google Cloud Skills Boost</div>
+              <div class="ach-card-issuer">Google · Credly Badge</div>
+              <div class="ach-card-desc">Verified credential for GCP proficiency</div>
+            </div>
+            <a href="https://drive.google.com/file/d/1AkiZ4-g9xA-P61GfZHffjFXv2nbd4vYK/view?usp=sharing" target="_blank" class="ach-view">View ↗</a>
+          </div>
+
+          <div class="ach-card">
+            <div class="ach-icon">💻</div>
+            <div class="ach-card-body">
+              <div class="ach-card-title">Intro to Software Engineering</div>
+              <div class="ach-card-issuer">IBM · Coursera</div>
+              <div class="ach-card-desc">Foundations of modern software development</div>
+            </div>
+            <a href="https://drive.google.com/file/d/1AkiZ4-g9xA-P61GfZHffjFXv2nbd4vYK/view?usp=sharing" target="_blank" class="ach-view">View ↗</a>
+          </div>
+
+          <div class="ach-card">
+            <div class="ach-icon">📈</div>
+            <div class="ach-card-body">
+              <div class="ach-card-title">Derivatives — Options &amp; Futures</div>
+              <div class="ach-card-issuer">Interactive Brokers</div>
+              <div class="ach-card-desc">Financial instruments and derivatives markets</div>
+            </div>
+            <a href="https://drive.google.com/file/d/1AkiZ4-g9xA-P61GfZHffjFXv2nbd4vYK/view?usp=sharing" target="_blank" class="ach-view">View ↗</a>
+          </div>
+
+        </div>
+
+        <!-- Leadership strip -->
+        <div class="ach-leadership">
+          <div class="ach-leadership-label">Leadership</div>
+          <div class="ach-leadership-items">
+            <span class="leadership-tag">🏆 Head Boy</span>
+            <span class="leadership-tag">🥈 Vice Head Boy</span>
+            <span class="leadership-tag">🎭 Cultural Secretary</span>
+          </div>
+          <a href="https://drive.google.com/file/d/1AkiZ4-g9xA-P61GfZHffjFXv2nbd4vYK/view?usp=sharing" target="_blank" class="ach-all-certs">
+            View All Certificates ↗
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-eyebrow reveal">Contact</p>
+      <h2 class="section-heading reveal">Let's build something together.</h2>
+      <p class="contact-sub reveal">Open to research collaborations, internships, and interesting side projects.</p>
+      <div class="reveal">
+        <a href="mailto:nishrajpal05@gmail.com" class="contact-email">nishrajpal05@gmail.com</a>
+      </div>
+      <div class="social-links reveal">
+        <a href="https://github.com/nishrajpal05" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/nishmeet-singh-rajpal" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="tel:+917903747354" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.34 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 79037 47354
+        </a>
+        <a href="https://drive.google.com/file/d/1OtkjYkbbVCLU5quxTiYG1aR6s28SpqyD/view?usp=drive_link" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <span class="footer-text">© 2026 Nishmeet Singh Rajpal</span>
+    <span class="footer-text">·No frameworks</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
