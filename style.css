@@ -727,6 +727,90 @@ footer {
 }
 
 /* Highlight card */
+
+.featured-achievement {
+  position: relative;
+  overflow: hidden;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.03),
+      rgba(255,255,255,0.015)
+    );
+
+  transition: all 0.35s ease;
+}
+
+.featured-achievement:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 200, 255, 0.22);
+}
+
+.featured-achievement::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(0,180,255,0.08),
+      transparent 42%
+    );
+
+  pointer-events: none;
+}
+
+.ach-logo-wrap {
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.03);
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  margin-right: 18px;
+
+  flex-shrink: 0;
+}
+
+.ach-logo {
+  width: 58px;
+  height: auto;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(0 0 12px rgba(0,180,255,0.15));
+}
+
+.featured-achievement .ach-card-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.featured-achievement .ach-card-issuer {
+  margin-top: 4px;
+}
+
+.featured-achievement .ach-card-desc {
+  margin-top: 12px;
+
+  line-height: 1.75;
+
+  color: rgba(255,255,255,0.76);
+}
 .ach-highlight {
   background: var(--bg-surface);
   padding: 32px 36px;
